@@ -9,7 +9,13 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMotionUsageDescription": "SihatAI uses motion data to count your daily steps and track your physical activity.",
+        "NSHealthShareUsageDescription": "SihatAI would like to access your health data to provide accurate step counting and fitness tracking.",
+        "NSHealthUpdateUsageDescription": "SihatAI would like to update your health data with step count information.",
+        "NSCameraUsageDescription": "SihatAI needs camera access to analyze your food photos for nutritional information."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -27,6 +33,7 @@
     },
     "plugins": [
       "expo-router",
+      "expo-sensors",
       [
         "expo-splash-screen",
         {
